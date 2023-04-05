@@ -1,4 +1,4 @@
-package com.fabiitch;
+package com.fabiitch.gdxunit;
 
 import com.badlogic.gdx.math.Circle;
 import com.badlogic.gdx.math.Rectangle;
@@ -22,7 +22,6 @@ public class MathTestUtils {
     public static Rectangle r(Vector2 pos, float witdh, float height) {
         return new Rectangle(pos.x, pos.y, witdh, height);
     }
-
 
     public static Rectangle r(float witdh, float height) {
         return r(0, 0, witdh, height);
