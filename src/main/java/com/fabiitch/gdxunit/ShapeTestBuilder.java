@@ -3,9 +3,8 @@ package com.fabiitch.gdxunit;
 import com.badlogic.gdx.math.Circle;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
-import com.fabiitch.nz.java.math.shapes.Segment;
 
-public class MathTestUtils {
+public class ShapeTestBuilder {
 
     public static Circle c(float radius) {
         return new Circle(0, 0, radius);
@@ -29,14 +28,6 @@ public class MathTestUtils {
 
     public static Rectangle r() {
         return r(0, 0, 0, 0);
-    }
-
-    public static Segment s(Vector2 a, Vector2 b) {
-        return new Segment(a, b);
-    }
-
-    public static Segment s(float aX, float aY, float bX, float bY) {
-        return new Segment(aX, aY, bX, bY);
     }
 
     public static Vector2 v2() {
