@@ -6,12 +6,13 @@ buildscript {
         gradlePluginPortal()
     }
     dependencies {
-        classpath 'com.vanniktech:gradle-maven-publish-plugin:0.25.3'
+        classpath 'com.vanniktech:gradle-maven-publish-plugin:0.29.0'
     }
 }
 
 apply plugin: 'java-library'
 apply plugin: 'com.vanniktech.maven.publish'
+apply plugin: 'idea'
 
 //Obviously, change the next line to match your project name.
 def projectName = 'Gdx-Unit'
@@ -19,7 +20,6 @@ def projectName = 'Gdx-Unit'
 //Change this to whatever Maven Central group you might publish to,
 //which is probably not this one if you aren't Tommy Ettinger.
 group 'com.github.fabiitch'
-
 version "$VERSION_NAME" // You can set the version in gradle.properties .
 
 [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
