@@ -14,16 +14,25 @@ public class ShapeTestBuilder {
         return new Circle(x, y, radius);
     }
 
-    public static Rectangle r(float x, float y, float witdh, float height) {
-        return new Rectangle(x, y, witdh, height);
+    public static Rectangle r(float x, float y, float width, float height) {
+        return new Rectangle(x, y, width, height);
     }
 
-    public static Rectangle r(Vector2 pos, float witdh, float height) {
-        return new Rectangle(pos.x, pos.y, witdh, height);
+    public static Rectangle rCenter(float x, float y, float width, float height) {
+        return new Rectangle(x - width / 2, y - height / 2, width, height);
     }
 
-    public static Rectangle r(float witdh, float height) {
-        return r(0, 0, witdh, height);
+
+    public static Rectangle r(Vector2 pos, float width, float height) {
+        return new Rectangle(pos.x, pos.y, width, height);
+    }
+
+    public static Rectangle rCenter(Vector2 center, float width, float height) {
+        return rCenter(center.x, center.y, width, height);
+    }
+
+    public static Rectangle r(float width, float height) {
+        return r(0, 0, width, height);
     }
 
     public static Rectangle r() {

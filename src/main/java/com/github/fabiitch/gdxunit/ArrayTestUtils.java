@@ -14,23 +14,25 @@ public class ArrayTestUtils {
 
     @SafeVarargs
     public static <T> void assertContainsAll(boolean identity, Array<T> array, T... values) {
-        for(int i = 0 ; i < values.length ; i ++){
+        for (int i = 0; i < values.length; i++) {
             if (!array.contains(values[i], identity))
-                Assertions.fail("array not contains value at pos "+i);
+                Assertions.fail("array not contains value at pos " + i);
         }
     }
+
     @SafeVarargs
     public static <T> void assertContainsAll(Array<T> array, T... values) {
-        for(int i = 0 ; i < values.length ; i ++){
+        for (int i = 0; i < values.length; i++) {
             if (!array.contains(values[i], true))
-                Assertions.fail("array not contains value at pos "+i);
+                Assertions.fail("array not contains value at pos " + i);
         }
     }
+
     @SafeVarargs
     public static <T> void assertContainsOnly(Array<T> array, T... values) {
-        for(int i = 0 ; i < values.length ; i ++){
+        for (int i = 0; i < values.length; i++) {
             if (!array.contains(values[i], true))
-                Assertions.fail("array not contains value at pos "+i);
+                Assertions.fail("array not contains value at pos " + i);
         }
     }
 
@@ -41,6 +43,14 @@ public class ArrayTestUtils {
                 Assertions.assertSame(array1.get(i), array2.get(i), "fail at index:" + i);
             else
                 Assertions.assertEquals(array1.get(i), array2.get(i), "fail at index:" + i);
+        }
+    }
+
+
+    public static <T> void assertEquals(float[] array1, float[] array2) {
+        Assertions.assertEquals(array1.length, array2.length, "size not equals");
+        for (int i = 0; i < array1.length; i++) {
+            Assertions.assertEquals(array1[i], array2[i], "fail at index:" + i);
         }
     }
 
