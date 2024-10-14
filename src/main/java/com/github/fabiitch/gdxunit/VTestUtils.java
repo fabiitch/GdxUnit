@@ -12,6 +12,21 @@ public class VTestUtils {
     private static final float TOLERANCE = MathUtils.FLOAT_ROUNDING_ERROR;
 
     //  V2  ========================
+    public static void assertEquals(float x1, float y1, float x2, float y2, float tolerance, String msgError) {
+        Assertions.assertEquals(x1, x2, tolerance, msgError == null ? "x not equals" : msgError + ": x not equals");
+        Assertions.assertEquals(x1, x2, tolerance, msgError == null ? "y not equals" : msgError + ": y not equals");
+    }
+
+    public static void assertEquals(float x1, float y1, float x2, float y2, float tolerance) {
+        assertEquals(x1, y1, x2, y2, tolerance, null);
+    }
+
+    public static void assertEquals(float x1, float y1, float x2, float y2) {
+        assertEquals(x1, y1, x2, y2, TOLERANCE, null);
+    }
+
+
+    //  V2  ========================
     public static void assertEquals(float x, float y, Vector2 v, float tolerance, String msgError) {
         Assertions.assertEquals(x, v.x, tolerance, msgError == null ? "x not equals" : msgError + ": x not equals");
         Assertions.assertEquals(y, v.y, tolerance, msgError == null ? "y not equals" : msgError + ": y not equals");
