@@ -1,10 +1,12 @@
 package com.github.fabiitch.gdxunit;
 
 import com.badlogic.gdx.utils.Array;
+import lombok.experimental.UtilityClass;
 import org.junit.jupiter.api.Assertions;
 
+@UtilityClass
 public class ArrayTestUtils {
-    public static <T> void assertHasSize(int sizeExpected, Array<T> array) {
+    public static <T> void assertSize(int sizeExpected, Array<T> array) {
         Assertions.assertEquals(sizeExpected, array.size);
     }
 
@@ -46,12 +48,5 @@ public class ArrayTestUtils {
         }
     }
 
-
-    public static <T> void assertEquals(float[] array1, float[] array2) {
-        Assertions.assertEquals(array1.length, array2.length, "size not equals");
-        for (int i = 0; i < array1.length; i++) {
-            Assertions.assertEquals(array1[i], array2[i], "fail at index:" + i);
-        }
-    }
 
 }
