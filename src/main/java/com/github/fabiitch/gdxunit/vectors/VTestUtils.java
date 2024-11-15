@@ -1,13 +1,15 @@
-package com.github.fabiitch.gdxunit;
+package com.github.fabiitch.gdxunit.vectors;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
+import lombok.experimental.UtilityClass;
 import org.junit.jupiter.api.Assertions;
 
 /**
  * utils for test Vectors and print value in junit
  */
+@UtilityClass
 public class VTestUtils {
     private static final float TOLERANCE = MathUtils.FLOAT_ROUNDING_ERROR;
 

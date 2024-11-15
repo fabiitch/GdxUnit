@@ -1,12 +1,14 @@
-package com.github.fabiitch.gdxunit;
+package com.github.fabiitch.gdxunit.utils;
 
 import com.badlogic.gdx.utils.Json;
+import lombok.experimental.UtilityClass;
 
 import java.io.File;
 import java.io.FileReader;
 import java.net.URL;
-
+@UtilityClass
 public class TestUtils {
+
     public static File getFileFromRessource(String path) {
         try {
             URL url = ClassLoader.getSystemResource(path);

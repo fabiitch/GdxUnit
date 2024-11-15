@@ -1,9 +1,11 @@
-package com.github.fabiitch.gdxunit;
+package com.github.fabiitch.gdxunit.shape;
 
 import com.badlogic.gdx.math.Circle;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
+import lombok.experimental.UtilityClass;
 
+@UtilityClass
 public class ShapeTestBuilder {
 
     public static Circle c(float radius) {
