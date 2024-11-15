@@ -1,4 +1,4 @@
-package com.github.fabiitch.gdxunit;
+package com.github.fabiitch.gdxunit.array;
 
 import com.badlogic.gdx.utils.Array;
 import lombok.experimental.UtilityClass;
