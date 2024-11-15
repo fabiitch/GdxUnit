@@ -1,8 +1,7 @@
 # Utils for test Gdx app or lib
 
 ## CI 
-[![Build](https://github.com/fabiitch/GdxUnit/workflows/Build%20Gradle/badge.svg?branch=master)](https://github.com/fabiitch/GdxUnit/actions/workflows/gradle.yml)
-
+[![Build](https://github.com/fabiitch/GdxUnit/workflows/Build%20Gradle/badge.svg)](https://github.com/fabiitch/GdxUnit/actions/workflows/build.yml)
 
 
 ## 1.0 
