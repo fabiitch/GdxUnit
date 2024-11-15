@@ -9,7 +9,7 @@
 ## 1.0 
 [![](https://jitpack.io/v/fabiitch/GdxUnit.svg)](https://jitpack.io/#fabiitch/GdxUnit)
 
-testImplementation 'com.github.fabiitch:GdxUnit:1.0'
+testImplementation 'com.github.fabiitch:GdxUnit:1.5'
 
 ---
 ## Master :
