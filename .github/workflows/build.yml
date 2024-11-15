@@ -27,5 +27,4 @@ jobs:
 
       - name: Build & test Java code
         run: |
-          ./gradlew fetchNatives
           ./gradlew build
