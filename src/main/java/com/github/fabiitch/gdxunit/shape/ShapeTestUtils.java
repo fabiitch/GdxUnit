@@ -1,14 +1,15 @@
-package com.github.fabiitch.gdxunit;
+package com.github.fabiitch.gdxunit.shape;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Polygon;
 import com.badlogic.gdx.math.Rectangle;
+import com.github.fabiitch.gdxunit.vectors.VTestUtils;
+import lombok.experimental.UtilityClass;
 import org.junit.jupiter.api.Assertions;
-
+@UtilityClass
 public class ShapeTestUtils {
 
     private static final float TOLERANCE = MathUtils.FLOAT_ROUNDING_ERROR;
-
 
     public static void assertEquals(Rectangle r1, Rectangle r2, float tolerance, String msgError) {
         Assertions.assertEquals(r1.x, r2.x, tolerance, msgError == null ? "x not equals" : msgError + ": x not equals");
