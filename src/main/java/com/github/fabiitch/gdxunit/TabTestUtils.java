@@ -58,5 +58,59 @@ public class TabTestUtils {
         }
     }
 
+    public static <T> void assertEquals(int[] tab1, int[] tab2) {
+        Assertions.assertEquals(tab1.length, tab2.length, "lenght not equals");
+        for (int i = 0; i < tab1.length; i++) {
+            Assertions.assertEquals(tab1[i], tab2[i], "fail at index:" + i);
+        }
+    }
 
+    public static <T> void assertEquals(short[] tab1, short[] tab2) {
+        Assertions.assertEquals(tab1.length, tab2.length, "lenght not equals");
+        for (int i = 0; i < tab1.length; i++) {
+            Assertions.assertEquals(tab1[i], tab2[i], "fail at index:" + i);
+        }
+    }
+
+    public static <T> void assertEquals(long[] tab1, long[] tab2) {
+        Assertions.assertEquals(tab1.length, tab2.length, "lenght not equals");
+        for (int i = 0; i < tab1.length; i++) {
+            Assertions.assertEquals(tab1[i], tab2[i], "fail at index:" + i);
+        }
+    }
+
+    public static <T> void assertEquals(float[] tab1, float[] tab2) {
+        Assertions.assertEquals(tab1.length, tab2.length, "lenght not equals");
+        for (int i = 0; i < tab1.length; i++) {
+            Assertions.assertEquals(tab1[i], tab2[i], "fail at index:" + i);
+        }
+    }
+
+    public static <T> void assertEquals(double[] tab1, double[] tab2) {
+        Assertions.assertEquals(tab1.length, tab2.length, "lenght not equals");
+        for (int i = 0; i < tab1.length; i++) {
+            Assertions.assertEquals(tab1[i], tab2[i], "fail at index:" + i);
+        }
+    }
+
+    public static <T> void assertEquals(byte[] tab1, byte[] tab2) {
+        Assertions.assertEquals(tab1.length, tab2.length, "lenght not equals");
+        for (int i = 0; i < tab1.length; i++) {
+            Assertions.assertEquals(tab1[i], tab2[i], "fail at index:" + i);
+        }
+    }
+
+    public static <T> void assertEquals(boolean[] tab1, boolean[] tab2) {
+        Assertions.assertEquals(tab1.length, tab2.length, "lenght not equals");
+        for (int i = 0; i < tab1.length; i++) {
+            Assertions.assertEquals(tab1[i], tab2[i], "fail at index:" + i);
+        }
+    }
+
+    public static <T> void assertEquals(char[] tab1, char[] tab2) {
+        Assertions.assertEquals(tab1.length, tab2.length, "lenght not equals");
+        for (int i = 0; i < tab1.length; i++) {
+            Assertions.assertEquals(tab1[i], tab2[i], "fail at index:" + i);
+        }
+    }
 }
