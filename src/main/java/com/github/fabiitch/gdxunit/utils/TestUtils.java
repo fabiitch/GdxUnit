@@ -9,7 +9,7 @@ import java.net.URL;
 @UtilityClass
 public class TestUtils {
 
-    public static File getFileFromRessource(String path) {
+    public static File getFileFromResource(String path) {
         try {
             URL url = ClassLoader.getSystemResource(path);
             return new File(url.toURI());
@@ -18,9 +18,9 @@ public class TestUtils {
         }
     }
 
-    public static <T> T getJsonFromRessource(Class<T> tClass, String path) {
+    public static <T> T getJsonFromResource(Class<T> tClass, String path) {
         Json json = new Json();
-        File file = getFileFromRessource(path);
+        File file = getFileFromResource(path);
         try {
             return json.fromJson(tClass, new FileReader(file));
         } catch (Exception e) {
