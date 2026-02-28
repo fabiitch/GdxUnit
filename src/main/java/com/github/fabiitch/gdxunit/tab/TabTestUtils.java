@@ -3,6 +3,7 @@ package com.github.fabiitch.gdxunit.tab;
 import org.junit.jupiter.api.Assertions;
 
 public class TabTestUtils {
+    @SafeVarargs
     public static <T> boolean containsAll(T[] tab, boolean identity, T... values) {
         for (T value : values) {
             if (!contains(tab, value, identity))
