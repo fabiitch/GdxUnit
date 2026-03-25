@@ -8,7 +8,6 @@ import java.io.FileReader;
 import java.net.URL;
 @UtilityClass
 public class TestUtils {
-
     public static File getFileFromResource(String path) {
         try {
             URL url = ClassLoader.getSystemResource(path);
