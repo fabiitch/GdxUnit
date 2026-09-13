@@ -18,7 +18,7 @@ def projectName = 'GdxUnit'
 
 //Change this to whatever Maven Central group you might publish to,
 //which is probably not this one if you aren't Tommy Ettinger.
-group 'com.github.fabiitch'
+group 'com.fabiitch'
 version "$VERSION_NAME"
 
 [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
